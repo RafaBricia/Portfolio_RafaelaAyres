@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<title>Rafaela Ayres — Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+html{
+scroll-behavior:smooth;
+}
+
+:root{
+--offwhite:#F5F1EB;
+--bege:#E8DFD6;
+--vinho:#6E1F2A;
+--vinho-escuro:#4A0F17;
+--texto:#2A2A2A;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Inter',sans-serif;
+color:var(--texto);
+background:var(--offwhite);
+}
+
+/* NAV */
+
+nav{
+position:fixed;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:30px 8%;
+background:var(--offwhite);
+z-index:1000;
+}
+
+.logo{
+font-family:'Playfair Display';
+font-size:22px;
+color:var(--vinho);
+}
+
+nav ul{
+display:flex;
+gap:35px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:var(--texto);
+font-size:14px;
+letter-spacing:1px;
+}
+
+nav a:hover{
+color:var(--vinho);
+}
+
+/* HERO */
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+padding:0 10%;
+max-width:900px;
+}
+
+.hero h1{
+font-family:'Playfair Display';
+font-size:80px;
+line-height:1;
+color:var(--vinho-escuro);
+}
+
+.hero span{
+color:var(--vinho);
+}
+
+.hero p{
+margin-top:25px;
+font-size:18px;
+max-width:500px;
+}
+
+/* ICONS */
+
+.social{
+margin-top:30px;
+display:flex;
+gap:20px;
+}
+
+.social i{
+font-size:22px;
+color:var(--vinho);
+transition:0.3s;
+}
+
+.social i:hover{
+transform:translateY(-4px);
+}
+
+/* PORTFOLIO */
+
+.portfolio{
+background:var(--vinho);
+padding:120px 8%;
+}
+
+.portfolio h2{
+color:white;
+font-family:'Playfair Display';
+font-size:50px;
+margin-bottom:60px;
+text-align:center;
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:50px;
+max-width:900px;
+margin:auto;
+}
+
+/* CARD */
+
+.project{
+position:relative;
+border-radius:12px;
+overflow:hidden;
+background:var(--vinho-escuro);
+transition:.3s;
+cursor:pointer;
+}
+
+.project:hover{
+transform:translateY(-6px);
+}
+
+.project a{
+display:block;
+}
+
+.project img{
+width:100%;
+display:block;
+}
+
+/* OVERLAY */
+
+.project-overlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.45);
+display:flex;
+align-items:center;
+justify-content:center;
+opacity:0;
+transition:0.3s;
+}
+
+.project-overlay span{
+color:white;
+font-size:14px;
+letter-spacing:1px;
+border:1px solid white;
+padding:8px 14px;
+border-radius:6px;
+}
+
+.project:hover .project-overlay{
+opacity:1;
+}
+
+/* TITULO */
+
+.project-info{
+margin-top:12px;
+color:white;
+font-size:15px;
+letter-spacing:1px;
+text-align:center;
+}
+
+/* ABOUT */
+
+.about{
+background:var(--bege);
+padding:140px 10%;
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:80px;
+align-items:center;
+}
+
+.about img{
+width:280px;
+border-radius:100%;
+}
+
+.about h2{
+font-family:'Playfair Display';
+font-size:50px;
+margin-bottom:20px;
+color:var(--vinho-escuro);
+}
+
+.about p{
+line-height:1.7;
+}
+
+/* CONTACT */
+
+.contact{
+background:var(--vinho-escuro);
+color:white;
+padding:140px 10%;
+text-align:center;
+}
+
+.contact h2{
+font-family:'Playfair Display';
+font-size:60px;
+margin-bottom:20px;
+}
+
+.contact a{
+color:#F5F1EB;
+font-size:20px;
+text-decoration:none;
+}
+
+/* FOOTER */
+
+footer{
+background:var(--vinho);
+color:#F5F1EB;
+padding:40px;
+text-align:center;
+font-size:14px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<div class="logo">Rafaela Ayres</div>
+
+<ul>
+<li><a href="#projetos">Projetos</a></li>
+<li><a href="#sobre">Sobre</a></li>
+<li><a href="#contato">Contato</a></li>
+</ul>
+
+</nav>
+
+<section class="hero">
+
+<h1>Design com <span>identidade</span></h1>
+
+<p>
+Designer focada em identidade visual, social media e experiências visuais estratégicas.
+</p>
+
+<div class="social">
+<a href="https://www.instagram.com/_.missrafa"><i class="fa-brands fa-instagram"></i></a>
+<a href="https://www.linkedin.com/in/rafaela-ayres/"><i class="fa-brands fa-linkedin"></i></a>
+<a href="mailto:rafaelaayres.projects@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+</div>
+
+</section>
+
+<section class="portfolio" id="projetos">
+
+<h2>Projetos</h2>
+
+<div class="grid">
+
+<div>
+<div class="project">
+<a href="https://www.canva.com/design/DAESMV36vBQ/JJsvSvt-FLbDqlSXBW8jtw/edit" target="_blank">
+<img src="nunesbarman.png">
+
+<div class="project-overlay">
+<span>Clique para ver o design</span>
+</div>
+
+</a>
+</div>
+<div class="project-info">Nunes Barman</div>
+</div>
+
+<div>
+<div class="project">
+<a href="https://www.canva.com/design/DAEbzIlg8gs/TTmwN0YDDiFXqdW6WFjYrw/edit" target="_blank">
+<img src="Bordados_Bianca.png">
+
+<div class="project-overlay">
+<span>Clique para ver o design</span>
+</div>
+
+</a>
+</div>
+<div class="project-info">Bordados By Bianca Nunes</div>
+</div>
+
+<div>
+<div class="project">
+<a href="https://www.canva.com/design/DAEb9UaTLgg/cAUgjDjehVfipnK59fZYQQ/edit" target="_blank">
+<img src="Habitus.Marketing_perfil.png">
+
+<div class="project-overlay">
+<span>Clique para ver o design</span>
+</div>
+
+</a>
+</div>
+<div class="project-info">Habitus Marketing</div>
+</div>
+
+<div>
+<div class="project">
+<a href="https://www.canva.com/design/DAHD3DfGU-w/kmD2s3U1niwUoKxLZaxRRg/edit" target="_blank">
+<img src="oxigenar.png">
+
+<div class="project-overlay">
+<span>Clique para ver o design</span>
+</div>
+
+</a>
+</div>
+<div class="project-info">Oxigenar</div>
+</div>
+
+<div>
+<div class="project">
+<a href="https://www.canva.com/design/DAHD3AZU_pw/37JIvqb3hNO8Z3uTKzOF8Q/edit" target="_blank">
+<img src="mundoempalavras.png">
+
+<div class="project-overlay">
+<span>Clique para ver o design</span>
+</div>
+
+</a>
+</div>
+<div class="project-info">Mundo em Palavras</div>
+</div>
+
+<div>
+<div class="project">
+<a href="https://www.canva.com/design/DAHD3AZU_pw/37JIvqb3hNO8Z3uTKzOF8Q/edit" target="_blank">
+<img src="SaborEssencial.png">
+
+<div class="project-overlay">
+<span>Clique para ver o design</span>
+</div>
+
+</a>
+</div>
+<div class="project-info">Sabor Essencial</div>
+</div>
+
+</div>
+
+</section>
+
+<section class="about" id="sobre">
+
+<div>
+
+<h2>Sobre mim</h2>
+
+<p>
+Sou designer apaixonada por transformar ideias em experiências visuais marcantes. Meu trabalho é focado na criação de identidades visuais, design digital e peças para social media que comuniquem com clareza, personalidade e estratégia.
+
+<br><br>
+
+Acredito que o design vai além da estética: ele precisa transmitir valores, fortalecer marcas e criar conexões reais com o público.
+
+<br><br>
+
+Busco desenvolver projetos que equilibram criatividade, organização visual e propósito, criando soluções elegantes e alinhadas aos objetivos de cada cliente.
+</p>
+
+</div>
+
+<img src="foto_rafa.jpeg">
+
+</section>
+
+<section class="contact" id="contato">
+
+<h2>Vamos trabalhar juntos</h2>
+
+<p>Entre em contato:</p>
+
+<a href="mailto:rafaelaayres.projects@gmail.com">
+rafaelaayres.projects@gmail.com
+</a>
+
+</section>
+
+<footer>
+© Rafaela Ayres
+</footer>
+
+</body>
+</html>
